@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Author Archive Redirect</title>
+  <meta name="robots" content="noindex,follow" />
+</head>
+<body>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const name = (params.get('name') || '').trim();
+      const next = new URL('../index.html', window.location.href);
+      if (name) next.searchParams.set('author', name);
+      window.location.replace(next.toString());
+    })();
+  </script>
+  <noscript>
+    <p>Please open <a href="../index.html">the blog archive</a>.</p>
+  </noscript>
+</body>
+</html>

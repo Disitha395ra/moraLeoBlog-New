@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="The Leo Chronicle — stories of service, leadership, and impact from the Leo Club of Moratuwa." />
+  <meta name="theme-color" content="#CC0000" />
+  <meta property="og:title"       content="The Leo Chronicle — Leo Club of Moratuwa" />
+  <meta property="og:description" content="Stories of service, leadership and impact." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="" />
+  <link rel="canonical" id="canonicalLink" href="index.html" />
+  <link rel="icon" type="image/png" href="images/logos/clubLogo.png" />
+  <title>The Leo Chronicle — Leo Club of Moratuwa</title>
+  <script type="application/ld+json" id="blogSchemaJsonLd">{}</script>
+  <script type="application/ld+json" id="breadcrumbsJsonLd">{}</script>
+
+  
+  <link rel="stylesheet" href="css/blog.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  
+  <div class="progress-bar" id="progressBar" role="progressbar" aria-hidden="true"></div>
+
+  
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img
+          src="images/logos/clubLogo.png"
+          alt="Leo Club of Moratuwa logo"
+          class="nav-club-logo"
+          onerror="this.style.display='none'"
+        />
+        Leo Club of Moratuwa <span>Blog</span>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  <section class="blog-hero" id="blogHero" aria-label="Blog hero">
+    
+    <canvas class="particles-canvas" id="particlesCanvas" aria-hidden="true"></canvas>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-tag">
+        <span class="tag-line" aria-hidden="true"></span>
+        Our Stories
+        <span class="tag-line" aria-hidden="true"></span>
+      </p>
+      <h1>The Leo <span class="accent">Chronicle</span></h1>
+      <p class="hero-sub">
+        Stories of service, leadership, and impact from the Leo Club of Moratuwa.<br />
+        Every project has a story. Every Leo has a journey.
+      </p>
+
+      
+      <div class="hero-stats" aria-label="Blog statistics">
+        <div class="h-stat">
+          <div class="h-num">
+            <strong class="h-counter" id="articlesCount" data-target="0" aria-label="articles">0</strong><span class="stat-suffix">+</span>
+          </div>
+          <span>Articles</span>
+        </div>
+        <div class="h-divider" aria-hidden="true"></div>
+        <div class="h-stat">
+          <div class="h-num">
+            <strong class="h-counter" id="categoriesCount" data-target="0" aria-label="categories">0</strong>
+          </div>
+          <span>Categories</span>
+        </div>
+        <div class="h-divider" aria-hidden="true"></div>
+        <div class="h-stat">
+          <div class="h-num">
+            <strong class="h-counter" id="visitorsCount" data-target="0" aria-label="visitors">0</strong><span class="stat-suffix">+</span>
+          </div>
+          <span>Visitors</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+
+  
+  <section class="filter-section" aria-label="Search and filter articles">
+    <div class="container">
+      <div class="filter-bar">
+
+        
+        <div class="search-wrap">
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search articles…"
+            aria-label="Search articles"
+            autocomplete="off"
+          />
+          <button class="search-clear" id="searchClear" aria-label="Clear search">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+      </div>
+
+      
+      <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Filter by category">
+        <button class="cat-tab active" data-cat="all"          role="tab" aria-selected="true">All</button>
+        <button class="cat-tab"        data-cat="news"         role="tab" aria-selected="false">News</button>
+        <button class="cat-tab"        data-cat="events"       role="tab" aria-selected="false">Events</button>
+        <button class="cat-tab"        data-cat="service"      role="tab" aria-selected="false">Service</button>
+        <button class="cat-tab"        data-cat="leadership"   role="tab" aria-selected="false">Leadership</button>
+        <button class="cat-tab"        data-cat="education"    role="tab" aria-selected="false">Education</button>
+        <button class="cat-tab"        data-cat="environment"  role="tab" aria-selected="false">Environment</button>
+        <button class="cat-tab"        data-cat="health"       role="tab" aria-selected="false">Health</button>
+        <button class="cat-tab"        data-cat="technology"   role="tab" aria-selected="false">Technology</button>
+        <button class="cat-tab"        data-cat="stories"      role="tab" aria-selected="false">Stories</button>
+        <button class="cat-tab"        data-cat="achievements" role="tab" aria-selected="false">Achievements</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  
+  <section class="featured-section" aria-label="Featured article">
+    <div class="container">
+      <p class="section-tag">Featured Story</p>
+
+      <div class="featured-card reveal">
+
+        
+        <div class="featured-visual">
+          <div class="featured-icon-wrap" aria-hidden="true">
+            <i class="fas fa-calendar-star"></i>
+          </div>
+          <div class="featured-badge">★ Featured</div>
+        </div>
+
+        
+        <div class="featured-body">
+          <div class="post-meta">
+            <span class="post-category events">Events</span>
+            <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> June 15, 2026</span>
+            <span class="post-read-time"><i class="far fa-clock" aria-hidden="true"></i> 5 min read</span>
+          </div>
+
+          <h2 class="featured-title">
+            Leo Day 2026: 46 Years of Serving with Passion, Impacting Lives
+          </h2>
+
+          <p class="featured-excerpt">
+            This year marks an extraordinary milestone — 46 years since the Leo Club of Moratuwa
+            first opened its doors. What began as a handful of passionate young leaders has grown
+            into one of Sri Lanka's most celebrated Leo clubs. On Leo Day 2026, we gathered to
+            reflect, celebrate, and commit to another year of meaningful service.
+          </p>
+
+          <div class="post-footer">
+            <div class="post-author">
+              <div class="author-avatar gold" aria-hidden="true">E</div>
+              <div>
+                <span class="author-name">Leo Editorial Team</span>
+                <span class="author-role">Club Editors</span>
+              </div>
+            </div>
+            <button class="btn-read-more" data-post="featured" aria-label="Read full featured story">
+              Read Full Story <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        
+        <template class="post-full-content">
+          <h2>Leo Day 2026: A Celebration of 46 Years of Service</h2>
+          <p class="content-meta">
+            <i class="far fa-calendar-alt"></i> June 15, 2026
+            &nbsp;|&nbsp;
+            <i class="far fa-clock"></i> 5 min read
+            &nbsp;|&nbsp;
+            By Leo Editorial Team
+          </p>
+
+          <p>
+            On the morning of June 15th, 2026, the Leo Club of Moratuwa gathered at the University of
+            Moratuwa Auditorium for what would become one of the most memorable Leo Day celebrations in
+            our 46-year history. The air was electric — alumni who hadn't seen each other in years,
+            active members who'd grown into leaders, and guests who'd been touched by our work all
+            came together under one roof.
+          </p>
+
+          <h3>A Morning of Reflection</h3>
+          <p>
+            The ceremony opened with a moment of silence for all those our projects have helped over
+            the decades. Our President reflected on the journey from 1980 — when a small group of
+            determined young students first pledged to serve their community — to today, where over
+            1,000 Leos have passed through our ranks.
+          </p>
+          <blockquote>
+            "When we serve, we don't just change other lives. We change ourselves. Every Leo who has
+            stood on this stage before us has left Moratuwa a little better than they found it."
+            <br/><strong>— Club President, 2025/26</strong>
+          </blockquote>
+
+          <h3>Awards and Recognition</h3>
+          <p>
+            The highlight of the morning was the awards ceremony. The <strong>Best Leo Award</strong>
+            went to a member who personally organized over 12 community events this year alone,
+            including the landmark Blood Donation Drive that collected 150 units in a single day.
+            The <strong>Outstanding Service Award</strong> recognized our Environment team for
+            planting 500 trees across Moratuwa and nearby schools.
+          </p>
+
+          <h3>An Evening to Remember</h3>
+          <p>
+            As the sun set over Moratuwa, members, alumni, and Lions advisors gathered for a gala
+            dinner. Stories were shared, friendships renewed, and memories made that will last a
+            lifetime. A surprise photo montage — 46 years of Leo Club memories — drew applause,
+            laughter, and more than a few tears.
+          </p>
+
+          <h3>Looking Forward to Year 47</h3>
+          <p>
+            As we close Leo Day 2026 and look ahead, our commitment to service remains unwavering.
+            Upcoming projects include a major <strong>Blood Donation Drive</strong>, expansion of
+            the <strong>Leo Tutors</strong> program to three new schools, and a new
+            <strong>Mental Health on Campus</strong> initiative. Stay tuned — the best is yet to come.
+          </p>
+
+          <div class="content-tags">
+            <span class="tag">Leo Day</span>
+            <span class="tag">46 Years</span>
+            <span class="tag">Annual Celebration</span>
+            <span class="tag">Awards</span>
+            <span class="tag">Milestones</span>
+          </div>
+        </template>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section class="posts-section" id="postsSection" aria-label="All blog articles">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-tag">All Articles</p>
+        <h2 class="section-title">Latest from the <span class="accent">Chronicle</span></h2>
+        <p class="posts-count" id="postsCount" aria-live="polite">
+          Showing <strong>8</strong> articles
+        </p>
+      </div>
+
+      
+      <div class="no-results" id="noResults" role="status" aria-live="polite">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <h3>No articles found</h3>
+        <p>Try a different search term or select a different category.</p>
+      </div>
+
+      
+      <div class="blog-grid" id="blogGrid">
+        
+      </div>
+
+      
+      <div class="pagination-wrap" aria-label="Article pagination">
+        <button class="btn-page" id="pagePrevBtn" aria-label="Go to previous page">
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          <span>Previous</span>
+        </button>
+        <p class="page-indicator" id="pageIndicator" aria-live="polite">Page 1 of 1</p>
+        <button class="btn-page" id="pageNextBtn" aria-label="Go to next page">
+          <span>Next</span>
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  
+  <section class="contribute-section" aria-label="Submit your story">
+    <div class="container">
+      <div class="contribute-card reveal">
+
+        <div class="contribute-icon" aria-hidden="true">
+          <i class="fas fa-pen-nib"></i>
+        </div>
+
+        <div class="contribute-content">
+          <h2>Share Your Leo Story</h2>
+          <p>
+            Have a project recap, a personal reflection, or an event story to share?
+            Every Leo experience matters — and yours could inspire the next generation of leaders.
+            You don't need to be a writer. You just need to have lived the moment.
+          </p>
+
+          <div class="contribute-steps">
+            <div class="c-step">
+              <span class="c-num">01</span>
+              <p>Write your story in a Google Doc, Word file, or even WhatsApp message</p>
+            </div>
+            <div class="c-step">
+              <span class="c-num">02</span>
+              <p>Send it to our Chief Editor through the club email or social media</p>
+            </div>
+            <div class="c-step">
+              <span class="c-num">03</span>
+              <p>We format, review, and publish it — with full credit to you</p>
+            </div>
+          </div>
+
+          <a href="#" class="btn-primary">
+            <i class="fas fa-envelope" aria-hidden="true"></i> Submit Your Story
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+  <footer class="blog-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <img
+            src="images/logos/clubLogo.png"
+            alt="Leo Club of Moratuwa"
+            onerror="this.style.display='none'"
+          />
+          <div>
+            <h3>Leo Club of Moratuwa</h3>
+            <p>The Leo Chronicle</p>
+          </div>
+        </div>
+
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://web.facebook.com/LeoClubOfMoratuwa" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/mora_leos/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/leo-club-of-moratuwa/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://youtube.com/@leoclubofmoratuwa1321?si=IWdBcuFnTxDGwuSn" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@leoclubof.moratuwa" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Leo Club of Moratuwa. All rights reserved.</p>
+        <p>We Serve. We Lead. We Inspire.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Article reader">
+    <div class="modal" id="modal">
+
+      <button class="modal-close" id="modalClose" aria-label="Close article">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+
+      
+      <div class="modal-content" id="modalContent" tabindex="0"></div>
+
+      <div class="modal-footer">
+        <div class="modal-share" aria-label="Share this article">
+          <span>Share:</span>
+          <button class="share-btn" onclick="sharePost('facebook')" aria-label="Share on Facebook">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn" onclick="sharePost('whatsapp')" aria-label="Share on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn" onclick="sharePost('copy')" aria-label="Copy link">
+            <i class="fas fa-link" aria-hidden="true"></i>
+          </button>
+        </div>
+        <button class="btn-modal-close" id="modalCloseBottom">Close Article</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+  <button class="back-to-top" id="backToTop" aria-label="Back to top of page">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+
+  
+    <script src="js/articles/news.js"></script>
+    <script src="js/articles/events.js"></script>
+    <script src="js/articles/service.js"></script>
+    <script src="js/articles/leadership.js"></script>
+    <script src="js/articles/education.js"></script>
+    <script src="js/articles/environment.js"></script>
+    <script src="js/articles/health.js"></script>
+    <script src="js/articles/technology.js"></script>
+    <script src="js/articles/stories.js"></script>
+    <script src="js/articles/achievements.js"></script>
+  <script src="js/articles-index.js"></script>
+  <script src="js/blog.js"></script>
+
+</body>
+</html>
+
+
+
+
