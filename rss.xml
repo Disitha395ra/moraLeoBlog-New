@@ -1,136 +1,139 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
     <title>The Leo Chronicle</title>
-    <link>https://example.com/blog/index.html</link>
+    <link>https://moraleoblog.web.app/blog/index.html</link>
     <description>Stories of service, leadership, and impact from the Leo Club of Moratuwa.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Jul 2026 23:42:06 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Club Bulletin: July Updates from the Executive Board</title>
-      <link>https://example.com/blog/index.html?post=club-bulletin-july-updates-from-the-executive-board</link>
-      <guid>https://example.com/blog/index.html?post=club-bulletin-july-updates-from-the-executive-board</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=club-bulletin-july-updates-from-the-executive-board</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=club-bulletin-july-updates-from-the-executive-board</guid>
       <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
       <description>news article by News Desk</description>
     </item>
     <item>
       <title>Weekend Fellowship Meetup: Highlights and Next Steps</title>
-      <link>https://example.com/blog/index.html?post=weekend-fellowship-meetup-highlights-and-next-steps</link>
-      <guid>https://example.com/blog/index.html?post=weekend-fellowship-meetup-highlights-and-next-steps</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=weekend-fellowship-meetup-highlights-and-next-steps</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=weekend-fellowship-meetup-highlights-and-next-steps</guid>
       <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
       <description>events article by Event Team</description>
     </item>
     <item>
       <title>Community Care Day: Essentials Distributed to Families</title>
-      <link>https://example.com/blog/index.html?post=community-care-day-essentials-distributed-to-families</link>
-      <guid>https://example.com/blog/index.html?post=community-care-day-essentials-distributed-to-families</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=community-care-day-essentials-distributed-to-families</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=community-care-day-essentials-distributed-to-families</guid>
       <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
       <description>service article by Service Wing</description>
     </item>
     <item>
       <title>Leading with Empathy: Lessons from Team Coordinators</title>
-      <link>https://example.com/blog/index.html?post=leading-with-empathy-lessons-from-team-coordinators</link>
-      <guid>https://example.com/blog/index.html?post=leading-with-empathy-lessons-from-team-coordinators</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=leading-with-empathy-lessons-from-team-coordinators</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=leading-with-empathy-lessons-from-team-coordinators</guid>
       <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
       <description>leadership article by Leadership Desk</description>
     </item>
     <item>
       <title>Study Skills Session: Practical Tools for Freshers</title>
-      <link>https://example.com/blog/index.html?post=study-skills-session-practical-tools-for-freshers</link>
-      <guid>https://example.com/blog/index.html?post=study-skills-session-practical-tools-for-freshers</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=study-skills-session-practical-tools-for-freshers</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=study-skills-session-practical-tools-for-freshers</guid>
       <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
       <description>education article by Education Team</description>
     </item>
     <item>
       <title>Clean Campus Morning: Student Volunteers in Action</title>
-      <link>https://example.com/blog/index.html?post=clean-campus-morning-student-volunteers-in-action</link>
-      <guid>https://example.com/blog/index.html?post=clean-campus-morning-student-volunteers-in-action</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=clean-campus-morning-student-volunteers-in-action</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=clean-campus-morning-student-volunteers-in-action</guid>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <description>environment article by Green Unit</description>
     </item>
     <item>
       <title>Campus Wellness Week: Simple Habits for Better Health</title>
-      <link>https://example.com/blog/index.html?post=campus-wellness-week-simple-habits-for-better-health</link>
-      <guid>https://example.com/blog/index.html?post=campus-wellness-week-simple-habits-for-better-health</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=campus-wellness-week-simple-habits-for-better-health</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=campus-wellness-week-simple-habits-for-better-health</guid>
       <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
       <description>health article by Health Desk</description>
     </item>
     <item>
       <title>Tech for Service: Tools We Use to Run Better Projects</title>
-      <link>https://example.com/blog/index.html?post=tech-for-service-tools-we-use-to-run-better-projects</link>
-      <guid>https://example.com/blog/index.html?post=tech-for-service-tools-we-use-to-run-better-projects</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=tech-for-service-tools-we-use-to-run-better-projects</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=tech-for-service-tools-we-use-to-run-better-projects</guid>
       <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
       <description>technology article by Tech Team</description>
     </item>
     <item>
       <title>A Day That Changed Me: One Volunteer&apos;s Reflection</title>
-      <link>https://example.com/blog/index.html?post=a-day-that-changed-me-one-volunteers-reflection</link>
-      <guid>https://example.com/blog/index.html?post=a-day-that-changed-me-one-volunteers-reflection</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=a-day-that-changed-me-one-volunteers-reflection</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=a-day-that-changed-me-one-volunteers-reflection</guid>
       <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
       <description>stories article by Ruvini De Silva</description>
     </item>
     <item>
       <title>Recognition Night: Celebrating Outstanding Leo Impact</title>
-      <link>https://example.com/blog/index.html?post=recognition-night-celebrating-outstanding-leo-impact</link>
-      <guid>https://example.com/blog/index.html?post=recognition-night-celebrating-outstanding-leo-impact</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=recognition-night-celebrating-outstanding-leo-impact</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=recognition-night-celebrating-outstanding-leo-impact</guid>
       <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
       <description>achievements article by Awards Committee</description>
     </item>
     <item>
-      <title>Blood Donation Drive: 150 Units Collected — Lives Saved in a Single Day</title>
-      <link>https://example.com/blog/index.html?post=blood-donation-drive-150-units-collected-lives-saved-in-a-single-day</link>
-      <guid>https://example.com/blog/index.html?post=blood-donation-drive-150-units-collected-lives-saved-in-a-single-day</guid>
+      <title>Blood Donation Drive: 150 Units Collected � Lives Saved in a Single Day</title>
+      <link>https://moraleoblog.web.app/blog/index.html?post=blood-donation-drive-150-units-collected-lives-saved-in-a-single-day</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=blood-donation-drive-150-units-collected-lives-saved-in-a-single-day</guid>
       <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
       <description>service article by Ravi Perera</description>
     </item>
     <item>
       <title>Welcome to the Family: 23 New Leos Inducted into the Club for 2026</title>
-      <link>https://example.com/blog/index.html?post=welcome-to-the-family-23-new-leos-inducted-into-the-club-for-2026</link>
-      <guid>https://example.com/blog/index.html?post=welcome-to-the-family-23-new-leos-inducted-into-the-club-for-2026</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=welcome-to-the-family-23-new-leos-inducted-into-the-club-for-2026</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=welcome-to-the-family-23-new-leos-inducted-into-the-club-for-2026</guid>
       <pubDate>Fri, 10 Apr 2026 00:00:00 GMT</pubDate>
       <description>news article by Amaya Silva</description>
     </item>
     <item>
       <title>Green Campus Initiative: 500 Trees Planted for a Greener Tomorrow</title>
-      <link>https://example.com/blog/index.html?post=green-campus-initiative-500-trees-planted-for-a-greener-tomorrow</link>
-      <guid>https://example.com/blog/index.html?post=green-campus-initiative-500-trees-planted-for-a-greener-tomorrow</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=green-campus-initiative-500-trees-planted-for-a-greener-tomorrow</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=green-campus-initiative-500-trees-planted-for-a-greener-tomorrow</guid>
       <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
       <description>environment article by Sahan Fernando</description>
     </item>
     <item>
       <title>Youth Leadership Summit 2026: Building Tomorrow&apos;s Leaders Today</title>
-      <link>https://example.com/blog/index.html?post=youth-leadership-summit-2026-building-tomorrows-leaders-today</link>
-      <guid>https://example.com/blog/index.html?post=youth-leadership-summit-2026-building-tomorrows-leaders-today</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=youth-leadership-summit-2026-building-tomorrows-leaders-today</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=youth-leadership-summit-2026-building-tomorrows-leaders-today</guid>
       <pubDate>Sat, 14 Feb 2026 00:00:00 GMT</pubDate>
       <description>events article by Dinusha Wijeratne</description>
     </item>
     <item>
       <title>Digital Literacy Workshop: Teaching Seniors to Navigate the Digital World</title>
-      <link>https://example.com/blog/index.html?post=digital-literacy-workshop-teaching-seniors-to-navigate-the-digital-world</link>
-      <guid>https://example.com/blog/index.html?post=digital-literacy-workshop-teaching-seniors-to-navigate-the-digital-world</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=digital-literacy-workshop-teaching-seniors-to-navigate-the-digital-world</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=digital-literacy-workshop-teaching-seniors-to-navigate-the-digital-world</guid>
       <pubDate>Sun, 18 Jan 2026 00:00:00 GMT</pubDate>
       <description>education article by Punsara Dias</description>
     </item>
     <item>
       <title>How Leo Changed My Life: A Member&apos;s Journey from Shy Fresher to Club Leader</title>
-      <link>https://example.com/blog/index.html?post=how-leo-changed-my-life-a-members-journey-from-shy-fresher-to-club-leader</link>
-      <guid>https://example.com/blog/index.html?post=how-leo-changed-my-life-a-members-journey-from-shy-fresher-to-club-leader</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=how-leo-changed-my-life-a-members-journey-from-shy-fresher-to-club-leader</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=how-leo-changed-my-life-a-members-journey-from-shy-fresher-to-club-leader</guid>
       <pubDate>Thu, 25 Dec 2025 00:00:00 GMT</pubDate>
       <description>stories article by Kasun Bandara</description>
     </item>
     <item>
       <title>Christmas Charity Drive 2025: Bringing Joy and Hope to 300 Children</title>
-      <link>https://example.com/blog/index.html?post=christmas-charity-drive-2025-bringing-joy-and-hope-to-300-children</link>
-      <guid>https://example.com/blog/index.html?post=christmas-charity-drive-2025-bringing-joy-and-hope-to-300-children</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=christmas-charity-drive-2025-bringing-joy-and-hope-to-300-children</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=christmas-charity-drive-2025-bringing-joy-and-hope-to-300-children</guid>
       <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
       <description>service article by Nadeeka Gunawardena</description>
     </item>
     <item>
       <title>Mental Health Awareness Week: Breaking the Silence on Campus</title>
-      <link>https://example.com/blog/index.html?post=mental-health-awareness-week-breaking-the-silence-on-campus</link>
-      <guid>https://example.com/blog/index.html?post=mental-health-awareness-week-breaking-the-silence-on-campus</guid>
+      <link>https://moraleoblog.web.app/blog/index.html?post=mental-health-awareness-week-breaking-the-silence-on-campus</link>
+      <guid>https://moraleoblog.web.app/blog/index.html?post=mental-health-awareness-week-breaking-the-silence-on-campus</guid>
       <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
       <description>health article by Thisara Ranasinghe</description>
     </item>
   </channel>
 </rss>
+
+
+

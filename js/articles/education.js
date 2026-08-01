@@ -1,106 +1,79 @@
 ﻿/* education articles */
 window.BLOG_ARTICLES_PARTS = window.BLOG_ARTICLES_PARTS || [];
 window.BLOG_ARTICLES_PARTS.push(`
-<article class="blog-card reveal" data-category="education" data-date="2026-01-18">
-
-          <div class="card-visual education" aria-hidden="true">
-            <i class="fas fa-laptop-code"></i>
+<article class="blog-card reveal" data-category="education" data-date="2026-07-10">
+          <div class="card-visual education has-image" aria-hidden="true">
+            <img
+              class="card-image"
+              src="images/education/saviya-session-1.jpg"
+              alt="Education article cover"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.classList.remove('has-image');"
+            />
+            <i class="fas fa-briefcase"></i>
             <div class="card-badge">Education</div>
             <div class="card-read-hint">Click to Read</div>
           </div>
-
           <div class="card-body">
             <div class="post-meta">
               <span class="post-category education">Education</span>
-              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> January 18, 2026</span>
+              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> July 10, 2026</span>
             </div>
-            <h3 class="card-title">Digital Literacy Workshop: Teaching Seniors to Navigate the Digital World</h3>
+            <h3 class="card-title">Saviya – Session 1: Empowering Dreams Through Entrepreneurship</h3>
             <p class="card-excerpt">
-              Mrs. Lakshmi, 72, had never used a smartphone. By the end of our workshop,
-              she was video calling her daughter in Australia for the first time.
-              Their reactions were priceless.
+              29 participants from unemployed and low-income families learned product costing,
+              pricing, marketing, and business development at Hewagama Junior School.
             </p>
-            <div class="card-footer">
-              <div class="post-author-sm">
-                <div class="author-avatar-sm gold" aria-hidden="true">P</div>
-                <span>Punsara Dias</span>
-              </div>
-              <div class="card-info"><i class="far fa-clock" aria-hidden="true"></i> 4 min read</div>
-            </div>
-          </div>
-
-          <template class="post-full-content">
-            <h2>Digital Literacy Workshop: Bridging the Generation Gap</h2>
-            <p class="content-meta">
-              <i class="far fa-calendar-alt"></i> January 18, 2026 &nbsp;|&nbsp;
-              <i class="far fa-clock"></i> 4 min read &nbsp;|&nbsp; By Punsara Dias
-            </p>
-            <p>
-              Mrs. Lakshmi, 72, had never used a smartphone. By the end of our Digital Literacy
-              Workshop, she was video calling her daughter in Australia for the first time in
-              three years. She held the phone to her face and said, "I can see you. I can really
-              see you." The room fell silent. Then everyone started crying.
-            </p>
-            <h3>Why This Matters</h3>
-            <p>
-              The digital divide is real. While younger generations navigate apps effortlessly,
-              thousands of senior citizens and rural families are left behind — unable to access
-              healthcare portals, government services, or even stay in touch with family abroad.
-              Our workshop aimed to close that gap, one lesson at a time.
-            </p>
-            <h3>The Workshop</h3>
-            <p>
-              Over two Saturdays, 30 Leo volunteers conducted sessions at three community centres
-              in Moratuwa. Topics included: how to use a smartphone safely, making video calls,
-              accessing government e-services online, using Google Maps, and — critically —
-              how to recognise and avoid online scams.
-            </p>
-            <blockquote>
-              "I never thought I could learn these things at my age. But these young people were
-              so patient and so kind. They never made me feel stupid for asking the same question
-              five times."
-              <br/><strong>— Workshop participant, age 68</strong>
-            </blockquote>
-            <h3>The Results</h3>
-            <p>
-              60 senior citizens completed the program. 48 said they felt noticeably more confident
-              using their phones. Several formed their own WhatsApp group afterward — entirely
-              organised by themselves. That, to us, was the real victory.
-            </p>
-            <div class="content-tags">
-              <span class="tag">Digital Literacy</span>
-              <span class="tag">Education</span>
-              <span class="tag">Senior Citizens</span>
-              <span class="tag">Community</span>
-            </div>
-          </template>
-        </article>
-
-<article class="blog-card reveal" data-category="education" data-date="2026-07-02">
-          <div class="card-visual education" aria-hidden="true">
-            <i class="fas fa-book-open"></i>
-            <div class="card-badge">Education</div>
-            <div class="card-read-hint">Click to Read</div>
-          </div>
-          <div class="card-body">
-            <div class="post-meta">
-              <span class="post-category education">Education</span>
-              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> July 02, 2026</span>
-            </div>
-            <h3 class="card-title">Study Skills Session: Practical Tools for Freshers</h3>
-            <p class="card-excerpt">An interactive workshop that helped first-year students build better routines and confidence.</p>
             <div class="card-footer">
               <div class="post-author-sm">
                 <div class="author-avatar-sm gold" aria-hidden="true">E</div>
-                <span>Education Team</span>
+                <span>Education Wing</span>
               </div>
               <div class="card-info"><i class="far fa-clock" aria-hidden="true"></i> 3 min read</div>
             </div>
           </div>
           <template class="post-full-content">
-            <h2>Study Skills Session: Practical Tools for Freshers</h2>
-            <p class="content-meta"><i class="far fa-calendar-alt"></i> July 02, 2026 &nbsp;|&nbsp; <i class="far fa-clock"></i> 3 min read &nbsp;|&nbsp; By Education Team</p>
-            <p>This is a preview article added to test the category layout and card design.</p>
+            <h2>Saviya – Session 1: Empowering Dreams Through Entrepreneurship</h2>
+            <p class="content-meta"><i class="far fa-calendar-alt"></i> July 10, 2026 &nbsp;|&nbsp; <i class="far fa-clock"></i> 3 min read &nbsp;|&nbsp; By Education Wing</p>
+            <p>
+              Creating opportunities is one of the most meaningful ways to uplift a community.
+              With this vision, the Leo Club of Moratuwa successfully conducted the first
+              session of SAVIYA on 10th July 2026 at Hewagama Junior School, bringing
+              together 29 enthusiastic participants. The programme aimed to empower
+              unemployed and low income families by equipping them with the knowledge and
+              practical skills needed to build sustainable livelihoods.
+            </p>
+            <h3>Building a Strong Foundation</h3>
+            <p>
+              The session focused on the essentials of entrepreneurship, covering key areas
+              such as product costing, pricing strategies, marketing techniques, and business
+              development. Participants gained valuable knowledge on how to transform
+              simple ideas into successful and sustainable small businesses.
+            </p>
+            <blockquote>
+              "Empowering one person with knowledge creates opportunities that can
+              transform an entire community."
+            </blockquote>
+            <h3>Learning for a Better Tomorrow</h3>
+            <p>
+              Throughout the programme, participants actively engaged in discussions and
+              explored practical approaches to starting and managing their own businesses. The
+              session encouraged self confidence, innovation, and financial independence while
+              highlighting the importance of careful planning and effective business
+              management.
+            </p>
+            <h3>Creating Lasting Impact</h3>
+            <p>
+              SAVIYA – Session 01 marked a meaningful step towards building stronger and
+              more self reliant communities. By promoting entrepreneurship and economic
+              empowerment, the Leo Club of Moratuwa continues its commitment to creating
+              opportunities that inspire lasting change and brighter futures.
+            </p>
+            <div class="content-tags">
+              <span class="tag">Saviya</span>
+              <span class="tag">Entrepreneurship</span>
+              <span class="tag">Community</span>
+            </div>
           </template>
         </article>
 `);

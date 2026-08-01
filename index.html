@@ -32,12 +32,6 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        <img
-          src="images/logos/clubLogo.png"
-          alt="Leo Club of Moratuwa logo"
-          class="nav-club-logo"
-          onerror="this.style.display='none'"
-        />
         Leo Club of Moratuwa <span>Blog</span>
       </div>
     </div>
@@ -51,6 +45,12 @@
     <div class="hero-overlay" aria-hidden="true"></div>
 
     <div class="hero-content">
+      <img
+        src="images/logos/clubLogo.png"
+        alt="Leo Club of Moratuwa logo"
+        class="hero-club-logo"
+        onerror="this.style.display='none'"
+      />
       <p class="hero-tag">
         <span class="tag-line" aria-hidden="true"></span>
         Our Stories
@@ -58,8 +58,7 @@
       </p>
       <h1>The Leo <span class="accent">Chronicle</span></h1>
       <p class="hero-sub">
-        Stories of service, leadership, and impact from the Leo Club of Moratuwa.<br />
-        Every project has a story. Every Leo has a journey.
+        Every project has a purpose. Every article has a message. Every Leo has a story worth sharing.
       </p>
 
       
@@ -424,6 +423,11 @@
     <script src="js/articles/stories.js"></script>
     <script src="js/articles/achievements.js"></script>
   <script src="js/articles-index.js"></script>
+    <script src="js/env-secrets.js"></script>
+  <script src="js/env-config.js"></script>
+  <script src="js/shared/text-utils.js"></script>
+  <script src="js/services/content-service.js"></script>
+  <script src="js/services/static-content-provider.js"></script>
   <script src="js/blog.js"></script>
 
 </body>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leo Club of Moratuwa Blog Admin</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/admin.css" />
+  <script src="../js/env-secrets.js"></script>
+  <script src="../js/env-config.js"></script>
+  <script src="../js/shared/text-utils.js"></script>
+</head>
+<body>
+  <div id="appRoot" class="app-root">
+    <header class="topbar">
+      <div class="brand">Leo Club of Moratuwa Blog</div>
+      <div class="topbar-actions">
+        <span id="authBadge" class="auth-badge">Signed out</span>
+        <button id="logoutBtn" class="btn secondary" hidden>Logout</button>
+      </div>
+    </header>
+
+    <main class="main-layout">
+      <section id="loginView" class="panel auth-panel">
+        <h1>Admin Login</h1>
+        <p>Sign in to manage blog content.</p>
+        <form id="loginForm" class="form-grid" autocomplete="on">
+          <label>Email
+            <input id="loginEmail" type="email" required />
+          </label>
+          <label>Password
+            <input id="loginPassword" type="password" required />
+          </label>
+          <button type="submit" class="btn">Sign In</button>
+        </form>
+      </section>
+
+      <section id="adminView" class="admin-view" hidden>
+        <aside class="panel sidebar">
+          <h2>Dashboard</h2>
+          <div class="stats">
+            <div class="stat-card"><strong id="statPosts">0</strong><span>Total Posts</span></div>
+            <div class="stat-card"><strong id="statDrafts">0</strong><span>Drafts</span></div>
+            <div class="stat-card"><strong id="statPublished">0</strong><span>Published</span></div>
+          </div>
+
+          <div class="toolbar">
+            <button id="newPostBtn" class="btn">+ Create Post</button>
+            <input id="postSearch" type="search" placeholder="Search posts..." />
+            <select id="statusFilter">
+              <option value="all">All Status</option>
+              <option value="draft">Draft</option>
+              <option value="published">Published</option>
+            </select>
+          </div>
+
+          <div id="postList" class="post-list"></div>
+        </aside>
+
+        <section class="panel editor-panel">
+          <h2 id="editorTitle">Create Post</h2>
+          <form id="postForm" class="form-grid" novalidate>
+            <input type="hidden" id="postId" />
+
+            <label>Title
+              <input id="postTitle" required />
+            </label>
+
+            <label>Slug
+              <input id="postSlug" required />
+            </label>
+
+            <label>Excerpt
+              <textarea id="postExcerpt" rows="3"></textarea>
+            </label>
+
+            <label>Category
+              <select id="postCategory"></select>
+            </label>
+
+            <label>Tags (comma separated)
+              <input id="postTags" placeholder="service, health, blood donation" />
+            </label>
+
+            <label>Author
+              <input id="postAuthor" />
+            </label>
+
+            <label>Read Time
+              <input id="postReadTime" placeholder="4 min read" />
+            </label>
+
+            <label>Status
+              <select id="postStatus">
+                <option value="draft">Draft</option>
+                <option value="published">Published</option>
+              </select>
+            </label>
+
+            <label>Featured Post
+              <select id="postFeatured">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+              </select>
+            </label>
+
+            <label>Cover Image
+              <input id="coverUpload" type="file" accept="image/*" />
+              <input id="coverImageUrl" placeholder="or paste image URL" />
+            </label>
+
+            <div class="editor-group">
+              <label>Content (Rich Text Editor)</label>
+              <div id="postContentEditor"></div>
+            </div>
+
+            <fieldset class="seo-box">
+              <legend>SEO</legend>
+              <label>SEO Title
+                <input id="seoTitle" />
+              </label>
+              <label>SEO Description
+                <textarea id="seoDescription" rows="2"></textarea>
+              </label>
+              <label>SEO Keywords (comma separated)
+                <input id="seoKeywords" />
+              </label>
+            </fieldset>
+
+            <div class="actions-row">
+              <button type="button" id="previewBtn" class="btn secondary">Preview</button>
+              <button type="button" id="saveDraftBtn" class="btn secondary">Save Draft</button>
+              <button type="button" id="publishBtn" class="btn">Publish</button>
+              <button type="button" id="deleteBtn" class="btn danger" hidden>Delete</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel preview-panel">
+          <h2>Preview</h2>
+          <article id="previewCard" class="preview-card">
+            <h3 id="previewTitle">Post title preview</h3>
+            <img id="previewImage" class="preview-image" alt="Cover preview" hidden />
+            <p id="previewMeta"></p>
+            <p id="previewExcerpt"></p>
+            <div id="previewContent"></div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-storage-compat.js"></script>
+
+  <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+
+  <script src="../js/articles-index.js"></script>
+  <script src="./assets/firebase-services.js"></script>
+  <script src="./assets/admin-app.js"></script>
+</body>
+</html>

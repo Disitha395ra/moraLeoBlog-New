@@ -1,4 +1,4 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
-Sitemap: https://example.com/blog/sitemap.xml
+Sitemap: https://moraleoblog.web.app/blog/sitemap.xml

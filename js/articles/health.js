@@ -1,108 +1,86 @@
-﻿/* health articles */
+/* health articles */
 window.BLOG_ARTICLES_PARTS = window.BLOG_ARTICLES_PARTS || [];
 window.BLOG_ARTICLES_PARTS.push(`
-<article class="blog-card reveal" data-category="health" data-date="2025-11-10">
-
-          <div class="card-visual health" aria-hidden="true">
-            <i class="fas fa-brain"></i>
+<article class="blog-card reveal" data-category="health" data-date="2026-07-12">
+          <div class="card-visual health has-image" aria-hidden="true">
+            <img
+              class="card-image"
+              src="images/health/its-okay-not-to-be-okay.jpg"
+              alt="Health article cover"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.classList.remove('has-image');"
+            />
+            <i class="fas fa-comment-medical"></i>
             <div class="card-badge">Health</div>
             <div class="card-read-hint">Click to Read</div>
           </div>
-
           <div class="card-body">
             <div class="post-meta">
               <span class="post-category health">Health</span>
-              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> November 10, 2025</span>
+              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> July 12, 2026</span>
             </div>
-            <h3 class="card-title">Mental Health Awareness Week: Breaking the Silence on Campus</h3>
+            <h3 class="card-title">It's Okay Not to Be Okay</h3>
             <p class="card-excerpt">
-              1 in 4 university students struggles with mental health — in silence. Our awareness
-              week reached 500 students, offered free counselling referrals, and started a
-              conversation that was long overdue on our campus.
+              We often ask each other, "How are you?" and almost without thinking, we reply,
+              "I'm fine." Sometimes those two words hide a heart carrying more than anyone can see.
             </p>
             <div class="card-footer">
               <div class="post-author-sm">
-                <div class="author-avatar-sm red" aria-hidden="true">T</div>
-                <span>Thisara Ranasinghe</span>
+                <div class="author-avatar-sm red" aria-hidden="true">S</div>
+                <span>Leo Sathmi Perera</span>
               </div>
-              <div class="card-info"><i class="far fa-clock" aria-hidden="true"></i> 5 min read</div>
+              <div class="card-info"><i class="far fa-clock" aria-hidden="true"></i> 3 min read</div>
             </div>
           </div>
-
           <template class="post-full-content">
-            <h2>Mental Health Awareness Week: Breaking the Silence</h2>
-            <p class="content-meta">
-              <i class="far fa-calendar-alt"></i> November 10, 2025 &nbsp;|&nbsp;
-              <i class="far fa-clock"></i> 5 min read &nbsp;|&nbsp; By Thisara Ranasinghe
+            <h2>It's Okay Not to Be Okay</h2>
+            <p class="content-meta"><i class="far fa-calendar-alt"></i> July 12, 2026 &nbsp;|&nbsp; <i class="far fa-clock"></i> 3 min read &nbsp;|&nbsp; By Leo Sathmi Perera</p>
+            <p>
+              We often ask each other, "How are you?" and almost without thinking, we reply,
+              "I'm fine." Sometimes we truly are. But other times, those two simple words hide
+              a heart that is carrying more than anyone else can see.
             </p>
             <p>
-              In Sri Lanka, mental health is still a topic many people are afraid to say out
-              loud. Stigma, misunderstanding, and a shortage of resources mean that thousands
-              of young people suffer in silence. The Leo Club of Moratuwa decided it was time
-              to change that — at least on our campus.
+              Mental health isn't just about the difficult days. It's about our thoughts, our
+              emotions, and how we cope with life's challenges. Just as we care for our physical
+              health, our minds deserve the same kindness, patience, and attention.
             </p>
-            <h3>The Week of Action</h3>
             <p>
-              Over five consecutive days, we ran workshops, panel discussions, and one-on-one
-              drop-in sessions in partnership with three licensed counsellors from the University
-              Counselling Unit. Each day focused on a different theme: recognising stress,
-              understanding anxiety, managing academic pressure, supporting a friend, and
-              knowing where to seek help.
+              There are moments when life feels overwhelming — when expectations become
+              heavy, failures seem impossible to overcome, or loneliness quietly finds its way
+              into our hearts. During those times, it's important to remember that asking for
+              support is never a sign of weakness. In fact, it is one of the bravest things a person
+              can do.
             </p>
-            <h3>Breaking the Silence</h3>
+            <h3>Presence Over Advice</h3>
             <p>
-              On Day 3, we opened a "Share Your Story" wall in the student common area — an
-              anonymous board where anyone could post a note about their mental health journey.
-              Within hours, it was covered. Some notes were heartbreaking. Many were hopeful.
-              All of them were honest. That wall became the most talked-about thing on campus
-              that week.
+              Sometimes, the greatest gift we can offer someone isn't advice. It's our presence.
+              A conversation, a smile, a simple "I'm here for you," or taking the time to truly
+              listen can mean more than we ever realize. We may never fully understand the
+              battles someone is facing, but our kindness can remind them that they don't have
+              to face those battles alone.
             </p>
             <blockquote>
-              "I didn't know there was a counselling centre on campus until this week.
-              I've been struggling for two semesters and I thought I was completely alone."
-              <br/><strong>— Student participant, anonymous</strong>
+              As we move through life, let's remember to be gentle with others and with
+              ourselves. Healing doesn't happen overnight, and it's okay to have days when we
+              need to pause, rest, and breathe. Every small step forward is still progress.
             </blockquote>
-            <h3>The Lasting Impact</h3>
             <p>
-              Over 500 students attended at least one session. 47 students were connected
-              with professional counsellors. Most importantly, a permanent
-              <strong>Mental Health Resource Board</strong> was installed in the student
-              activity centre — a lasting reminder that it's okay to ask for help.
+              Because behind every smile is a story we may never know. Let us choose
+              compassion over judgment, understanding over assumptions, and hope over
+              silence.
+            </p>
+            <p>
+              A kind heart, a listening ear, and a little compassion can brighten someone's
+              darkest day. You never know how much your kindness might mean to another
+              person.
             </p>
             <div class="content-tags">
               <span class="tag">Mental Health</span>
               <span class="tag">Awareness</span>
-              <span class="tag">University</span>
               <span class="tag">Wellbeing</span>
+              <span class="tag">Reflection</span>
             </div>
-          </template>
-        </article>
-
-<article class="blog-card reveal" data-category="health" data-date="2026-06-30">
-          <div class="card-visual health" aria-hidden="true">
-            <i class="fas fa-heartbeat"></i>
-            <div class="card-badge">Health</div>
-            <div class="card-read-hint">Click to Read</div>
-          </div>
-          <div class="card-body">
-            <div class="post-meta">
-              <span class="post-category health">Health</span>
-              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> June 30, 2026</span>
-            </div>
-            <h3 class="card-title">Campus Wellness Week: Simple Habits for Better Health</h3>
-            <p class="card-excerpt">From hydration to stress breaks, this campaign introduced practical routines for busy students.</p>
-            <div class="card-footer">
-              <div class="post-author-sm">
-                <div class="author-avatar-sm red" aria-hidden="true">H</div>
-                <span>Health Desk</span>
-              </div>
-              <div class="card-info"><i class="far fa-clock" aria-hidden="true"></i> 4 min read</div>
-            </div>
-          </div>
-          <template class="post-full-content">
-            <h2>Campus Wellness Week: Simple Habits for Better Health</h2>
-            <p class="content-meta"><i class="far fa-calendar-alt"></i> June 30, 2026 &nbsp;|&nbsp; <i class="far fa-clock"></i> 4 min read &nbsp;|&nbsp; By Health Desk</p>
-            <p>This is a preview article added to test the category layout and card design.</p>
           </template>
         </article>
 `);

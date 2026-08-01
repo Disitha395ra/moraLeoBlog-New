@@ -60,39 +60,22 @@ function initDynamicStats() {
 
 'use strict';
 
+const normalizeToken = window.TextUtils?.normalizeToken || ((value) => String(value || '').toLowerCase().trim());
+
 /* ───────────────────────────────────────────────────────────
    ARTICLES SOURCE — inject external article HTML if provided
 ─────────────────────────────────────────────────────────── */
-function injectArticlesFromExternalFile() {
+async function injectArticlesFromExternalFile() {
   const grid = document.getElementById('blogGrid');
   if (!grid) return;
 
   // Keep existing inline cards if present; only inject when grid is empty.
   if (grid.querySelector('.blog-card')) return;
 
-  const articleParts = window.BLOG_ARTICLES_PARTS;
-  if (Array.isArray(articleParts) && articleParts.length) {
-    grid.innerHTML = articleParts.join('\n\n');
-    return;
-  }
-
-  const externalHtml = window.BLOG_ARTICLES_HTML;
+  const externalHtml = await Promise.resolve(window.ContentService?.getRawArticleHtml?.() || '');
   if (typeof externalHtml === 'string' && externalHtml.trim().length) {
     grid.innerHTML = externalHtml;
   }
-}
-
-function normalizeToken(value) {
-  return String(value || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-}
-
-function getPostIndex() {
-  return Array.isArray(window.BLOG_POST_INDEX) ? window.BLOG_POST_INDEX : [];
 }
 
 function toAbsoluteUrl(pathOrUrl) {
@@ -201,35 +184,6 @@ function buildBreadcrumbJsonLd(contextBits) {
     '@type': 'BreadcrumbList',
     itemListElement: items,
   };
-}
-
-function hydrateCardsFromIndex(cards) {
-  const index = getPostIndex();
-  if (!index.length) return;
-
-  const lookup = new Map(
-    index.map(item => {
-      const key = [
-        normalizeToken(item.title),
-        String(item.date || '').trim(),
-        String(item.category || '').trim().toLowerCase(),
-      ].join('|');
-      return [key, item];
-    })
-  );
-
-  cards.forEach(card => {
-    const title = card.querySelector('.card-title')?.textContent || '';
-    const date = card.dataset.date || '';
-    const category = (card.dataset.category || '').toLowerCase();
-    const key = [normalizeToken(title), String(date).trim(), category].join('|');
-    const item = lookup.get(key);
-    if (!item) return;
-
-    card.dataset.slug = item.slug || normalizeToken(title);
-    card.dataset.author = item.author || '';
-    card.dataset.tags = Array.isArray(item.tags) ? item.tags.join('|') : '';
-  });
 }
 
 /* ───────────────────────────────────────────────────────────
@@ -470,7 +424,23 @@ function initFilter() {
 
   if (!cards.length) return;
 
-  hydrateCardsFromIndex(cards);
+  const contentService = window.ContentService;
+  const postRecords = contentService?.buildPostRecords?.(cards) || cards.map(card => {
+    const title = card.querySelector('.card-title')?.textContent?.trim() || '';
+    const excerpt = card.querySelector('.card-excerpt')?.textContent?.trim() || '';
+    const slug = card.dataset.slug || normalizeToken(title);
+    return {
+      id: slug,
+      slug,
+      title,
+      excerpt,
+      category: String(card.dataset.category || '').toLowerCase(),
+      date: String(card.dataset.date || '').trim(),
+      author: String(card.dataset.author || ''),
+      tags: String(card.dataset.tags || '').split('|').filter(Boolean),
+      card,
+    };
+  });
 
   let activeCat   = 'all';
   let searchTerm  = '';
@@ -656,25 +626,30 @@ function initFilter() {
   }
 
   function getFilteredCards() {
-    return cards.filter(card => {
-      const cat       = card.dataset.category || '';
-      const titleEl   = card.querySelector('.card-title');
-      const excerptEl = card.querySelector('.card-excerpt');
-      const title     = titleEl?.textContent.toLowerCase() || '';
-      const excerpt   = excerptEl?.textContent.toLowerCase() || '';
-      const author    = (card.dataset.author || '').toLowerCase();
-      const tags      = (card.dataset.tags || '').toLowerCase().split('|').filter(Boolean);
+    if (contentService?.filterPosts) {
+      return contentService.filterPosts(postRecords, {
+        category: activeCat,
+        author: activeAuthor,
+        tag: activeTag,
+        searchTerm,
+        postSlug: activePostSlug,
+      }).map(post => post.card);
+    }
 
-      if (activePostSlug) {
-        return normalizeToken(card.dataset.slug || '') === activePostSlug;
-      }
+    return postRecords
+      .filter(post => {
+        if (activePostSlug) {
+          return normalizeToken(post.slug || '') === activePostSlug;
+        }
 
-      const catMatch = activeCat === 'all' || cat === activeCat;
-      const searchMatch = !searchTerm || title.includes(searchTerm) || excerpt.includes(searchTerm);
-      const authorMatch = !activeAuthor || author === activeAuthor.toLowerCase();
-      const tagMatch = !activeTag || tags.includes(activeTag.toLowerCase());
-      return catMatch && searchMatch && authorMatch && tagMatch;
-    });
+        const catMatch = activeCat === 'all' || post.category === activeCat;
+        const searchMatch = !searchTerm || String(post.title || '').toLowerCase().includes(searchTerm) || String(post.excerpt || '').toLowerCase().includes(searchTerm);
+        const authorMatch = !activeAuthor || String(post.author || '').toLowerCase() === activeAuthor.toLowerCase();
+        const tags = Array.isArray(post.tags) ? post.tags.map(t => String(t).toLowerCase()) : [];
+        const tagMatch = !activeTag || tags.includes(activeTag.toLowerCase());
+        return catMatch && searchMatch && authorMatch && tagMatch;
+      })
+      .map(post => post.card);
   }
 
   function applyFilter() {
@@ -948,11 +923,6 @@ function initBackToTop() {
 }
 
 /* ───────────────────────────────────────────────────────────
-   LOAD MORE BUTTON (decorative — expand as needed)
-─────────────────────────────────────────────────────────── */
-function initLoadMore() {}
-
-/* ───────────────────────────────────────────────────────────
    FEATURED POST BUTTON
 ─────────────────────────────────────────────────────────── */
 function initFeaturedBtn() {
@@ -986,8 +956,8 @@ function initKeyboardNav() {
 /* ───────────────────────────────────────────────────────────
    INIT EVERYTHING on DOM ready
 ─────────────────────────────────────────────────────────── */
-document.addEventListener('DOMContentLoaded', () => {
-  injectArticlesFromExternalFile();
+document.addEventListener('DOMContentLoaded', async () => {
+  await injectArticlesFromExternalFile();
   initDynamicStats();        /* Load real article/category/visitor counts FIRST */
   initParticles();
   initProgressBar();

@@ -1,104 +1,155 @@
 ﻿/* events articles */
 window.BLOG_ARTICLES_PARTS = window.BLOG_ARTICLES_PARTS || [];
 window.BLOG_ARTICLES_PARTS.push(`
-<article class="blog-card reveal" data-category="events" data-date="2026-02-14">
-
-          <div class="card-visual events" aria-hidden="true">
-            <i class="fas fa-microphone-alt"></i>
+<article class="blog-card reveal" data-category="events" data-date="2026-07-01">
+          <div class="card-visual events has-image" aria-hidden="true">
+            <img
+              class="card-image"
+              src="images/events/aloka-26.jpg"
+              alt="Events article cover"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.classList.remove('has-image');"
+            />
+            <i class="fas fa-pray"></i>
             <div class="card-badge">Events</div>
             <div class="card-read-hint">Click to Read</div>
           </div>
-
           <div class="card-body">
             <div class="post-meta">
               <span class="post-category events">Events</span>
-              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> February 14, 2026</span>
+              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> July 01, 2026</span>
             </div>
-            <h3 class="card-title">Youth Leadership Summit 2026: Building Tomorrow's Leaders Today</h3>
+            <h3 class="card-title">ALOKA'26 — Seeking Blessings for a New Leoistic Year</h3>
             <p class="card-excerpt">
-              300 students. 15 schools. 12 workshops. 8 keynote speakers. One incredible day
-              dedicated entirely to the question: what does it take to lead?
+              To mark the dawn of a new Leoistic year, the Leo Club of Moratuwa organised
+              "Aloka '26," an Ashirwada Pooja at Bellanwila Rajamaha Viharaya.
             </p>
-            <div class="card-footer">
-              <div class="post-author-sm">
-                <div class="author-avatar-sm red" aria-hidden="true">D</div>
-                <span>Dinusha Wijeratne</span>
-              </div>
-              <div class="card-info"><i class="far fa-clock" aria-hidden="true"></i> 5 min read</div>
-            </div>
-          </div>
-
-          <template class="post-full-content">
-            <h2>Youth Leadership Summit 2026: Building Tomorrow's Leaders Today</h2>
-            <p class="content-meta">
-              <i class="far fa-calendar-alt"></i> February 14, 2026 &nbsp;|&nbsp;
-              <i class="far fa-clock"></i> 5 min read &nbsp;|&nbsp; By Dinusha Wijeratne
-            </p>
-            <p>
-              What does it take to lead? That was the central question at the Youth Leadership
-              Summit 2026, held at the Moratuwa City Council Hall — and the answers that came
-              back from 300 young people were both surprising and inspiring.
-            </p>
-            <h3>The Vision</h3>
-            <p>
-              The summit was designed to expose students to leadership concepts through interactive
-              workshops, real-world case studies, and direct mentorship from industry professionals,
-              senior Leos, and community changemakers. Not theory. Real, practical leadership.
-            </p>
-            <h3>The Day in Numbers</h3>
-            <p>
-              <strong>300 participants</strong> from 15 schools across Colombo and Gampaha.
-              <strong>12 interactive workshops</strong> covering communication, project management,
-              public speaking, and community leadership. <strong>8 keynote speakers</strong> —
-              entrepreneurs, doctors, engineers, social activists, and one past Leo president
-              who is now a member of parliament.
-            </p>
-            <blockquote>
-              "Leadership isn't about a title, a position, or being the loudest person in the
-              room. It's about taking responsibility for something bigger than yourself."
-              <br/><strong>— Keynote Speaker, Youth Leadership Summit 2026</strong>
-            </blockquote>
-            <h3>The Winning Idea</h3>
-            <p>
-              The most popular workshop was "From Idea to Impact" — where teams designed a
-              community project from scratch in 90 minutes. The winning team's idea,
-              a <strong>mobile library for underprivileged neighborhoods</strong>, was so
-              compelling that the Leo Club has adopted it as an official project for 2026/27.
-            </p>
-            <div class="content-tags">
-              <span class="tag">Leadership</span>
-              <span class="tag">Youth</span>
-              <span class="tag">Summit</span>
-              <span class="tag">Schools</span>
-            </div>
-          </template>
-        </article>
-
-<article class="blog-card reveal" data-category="events" data-date="2026-07-05">
-          <div class="card-visual events" aria-hidden="true">
-            <i class="fas fa-calendar-check"></i>
-            <div class="card-badge">Events</div>
-            <div class="card-read-hint">Click to Read</div>
-          </div>
-          <div class="card-body">
-            <div class="post-meta">
-              <span class="post-category events">Events</span>
-              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> July 05, 2026</span>
-            </div>
-            <h3 class="card-title">Weekend Fellowship Meetup: Highlights and Next Steps</h3>
-            <p class="card-excerpt">Members gathered for a casual fellowship evening focused on planning, networking, and team bonding.</p>
             <div class="card-footer">
               <div class="post-author-sm">
                 <div class="author-avatar-sm red" aria-hidden="true">E</div>
-                <span>Event Team</span>
+                <span>Events Wing</span>
               </div>
               <div class="card-info"><i class="far fa-clock" aria-hidden="true"></i> 3 min read</div>
             </div>
           </div>
           <template class="post-full-content">
-            <h2>Weekend Fellowship Meetup: Highlights and Next Steps</h2>
-            <p class="content-meta"><i class="far fa-calendar-alt"></i> July 05, 2026 &nbsp;|&nbsp; <i class="far fa-clock"></i> 3 min read &nbsp;|&nbsp; By Event Team</p>
-            <p>This is a preview article added to test the category layout and card design.</p>
+            <h2>ALOKA'26 — Seeking Blessings for a New Leoistic Year</h2>
+            <p class="content-meta"><i class="far fa-calendar-alt"></i> July 01, 2026 &nbsp;|&nbsp; <i class="far fa-clock"></i> 3 min read &nbsp;|&nbsp; By Events Wing</p>
+            <p>
+              As the dawn of a new Leoistic year begins, it brings with it new hopes, goals, and
+              opportunities to serve our community. To mark this special occasion, the
+              members of the Leo Club of Moratuwa organized "Aloka '26," an Ashirwada Pooja
+              held on 1st July 2026 at Bellanwila Rajamaha Viharaya. The gathering served as a
+              meaningful beginning, allowing members to seek blessings and embrace the year
+              ahead with hope and purpose.
+            </p>
+            <h3>A Blessed Beginning</h3>
+            <p>
+              The purpose of this spiritual gathering was to seek blessings for the upcoming
+              Leoistic year and to pray for strength, wisdom, and guidance in carrying out future
+              service projects successfully. It also provided an opportunity for members to
+              come together in unity, reflect on the values of service and leadership, and begin
+              the new chapter with positive intentions.
+            </p>
+            <blockquote>
+              "Where there is light, there is hope... and with hope, there is the power to serve."
+            </blockquote>
+            <h3>Moments of Reflection</h3>
+            <p>
+              During the programme, members participated in religious observances and
+              offered prayers for the success and well being of the club and its members. The
+              peaceful atmosphere of the temple reminded everyone that true leadership
+              begins with gratitude, compassion, and a sincere commitment to serving others.
+            </p>
+            <h3>Moving Forward with Purpose</h3>
+            <p>
+              Aloka '26 was more than a religious event, it was a moment of inspiration and
+              renewal. As we step into the new Leoistic year, we carry forward the blessings
+              and hopes gained from this special occasion, looking ahead with confidence and a
+              shared commitment to creating a meaningful difference through dedicated
+              service.
+            </p>
+            <div class="content-tags">
+              <span class="tag">Aloka '26</span>
+              <span class="tag">New Leoistic Year</span>
+              <span class="tag">Club Event</span>
+            </div>
+          </template>
+        </article>
+
+<article class="blog-card reveal" data-category="events" data-date="2026-07-11">
+          <div class="card-visual events has-image" aria-hidden="true">
+            <img
+              class="card-image"
+              src="images/events/leo-voyage.jpg"
+              alt="Events article cover"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.classList.remove('has-image');"
+            />
+            <i class="fas fa-compass"></i>
+            <div class="card-badge">Events</div>
+            <div class="card-read-hint">Click to Read</div>
+          </div>
+          <div class="card-body">
+            <div class="post-meta">
+              <span class="post-category events">Events</span>
+              <span class="post-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> July 11, 2026</span>
+            </div>
+            <h3 class="card-title">Leo Voyage: The Beginning of Every Leo Journey</h3>
+            <p class="card-excerpt">
+              A hybrid orientation held with the Leo Club of Prince of Wales College, bringing
+              together 39 aspiring and active Leos to explore the spirit of Leoism.
+            </p>
+            <div class="card-footer">
+              <div class="post-author-sm">
+                <div class="author-avatar-sm red" aria-hidden="true">E</div>
+                <span>Events Wing</span>
+              </div>
+              <div class="card-info"><i class="far fa-clock" aria-hidden="true"></i> 3 min read</div>
+            </div>
+          </div>
+          <template class="post-full-content">
+            <h2>Leo Voyage: The Beginning of Every Leo Journey</h2>
+            <p class="content-meta"><i class="far fa-calendar-alt"></i> July 11, 2026 &nbsp;|&nbsp; <i class="far fa-clock"></i> 3 min read &nbsp;|&nbsp; By Events Wing</p>
+            <p>
+              Every great journey begins with a single step. With this spirit, LEO VOYAGE was
+              successfully held on 11th July 2026 at Prince of Wales College and simultaneously
+              via Google Meet, bringing together 39 aspiring and active Leos. Organised in
+              collaboration with the Leo Club of Prince of Wales College, the programme was
+              designed to introduce participants to the values, purpose, and opportunities of
+              the Leo movement.
+            </p>
+            <h3>Setting Sail</h3>
+            <p>
+              Conducted in a hybrid format, the programme ensured greater accessibility by
+              allowing participants to join both in person and online. The orientation provided
+              new Leos with a strong foundation, helping them understand the spirit of
+              leadership, fellowship, and community service that defines Leoism.
+            </p>
+            <blockquote>
+              "Every leader begins as a learner, and every journey begins with the courage to
+              take the first step."
+            </blockquote>
+            <h3>Learning from Experience</h3>
+            <p>
+              The session featured two experienced guest speakers who shared their inspiring
+              journeys, leadership experiences, and valuable insights into personal growth and
+              community service. Their stories motivated participants to embrace volunteerism,
+              strengthen their leadership potential, and actively contribute to meaningful
+              service initiatives.
+            </p>
+            <h3>A Journey Begins</h3>
+            <p>
+              LEO VOYAGE served as an inspiring platform for learning, networking, and
+              building lasting connections among Leos. As participants embark on their Leo
+              journey, they carry forward the confidence, enthusiasm, and commitment to
+              create a positive impact within their communities and beyond.
+            </p>
+            <div class="content-tags">
+              <span class="tag">Leo Voyage</span>
+              <span class="tag">Orientation</span>
+              <span class="tag">Club Event</span>
+            </div>
           </template>
         </article>
 `);
