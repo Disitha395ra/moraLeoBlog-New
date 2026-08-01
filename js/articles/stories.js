@@ -5,7 +5,7 @@ window.BLOG_ARTICLES_PARTS.push(`
           <div class="card-visual stories has-image" aria-hidden="true">
             <img
               class="card-image"
-              src="images/stories/what-does-it-mean-to-be-a-leo.jpg"
+              src="images/stories/what-does-it-mean-to-be-a-leo.png"
               alt="Stories article cover"
               loading="lazy"
               onerror="this.style.display='none'; this.parentElement.classList.remove('has-image');"
@@ -103,7 +103,7 @@ window.BLOG_ARTICLES_PARTS.push(`
           <div class="card-visual stories has-image" aria-hidden="true">
             <img
               class="card-image"
-              src="images/stories/trust-and-loyalty.jpg"
+              src="images/stories/trust-and-loyalty.png"
               alt="Stories article cover"
               loading="lazy"
               onerror="this.style.display='none'; this.parentElement.classList.remove('has-image');"
@@ -201,7 +201,7 @@ window.BLOG_ARTICLES_PARTS.push(`
           <div class="card-visual stories has-image" aria-hidden="true">
             <img
               class="card-image"
-              src="images/stories/where-art-meets-the-soul.jpg"
+              src="images/stories/where-art-meets-the-soul.png"
               alt="Stories article cover"
               loading="lazy"
               onerror="this.style.display='none'; this.parentElement.classList.remove('has-image');"
@@ -297,7 +297,7 @@ window.BLOG_ARTICLES_PARTS.push(`
           <div class="card-visual stories has-image" aria-hidden="true">
             <img
               class="card-image"
-              src="images/stories/the-artist-by-the-lake.jpg"
+              src="images/stories/the-artist-by-the-lake.png"
               alt="Stories article cover"
               loading="lazy"
               onerror="this.style.display='none'; this.parentElement.classList.remove('has-image');"
